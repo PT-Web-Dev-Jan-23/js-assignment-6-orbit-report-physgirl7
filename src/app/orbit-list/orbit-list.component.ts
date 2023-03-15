@@ -10,6 +10,8 @@ import { Satellite } from '../satellite';
 export class OrbitListComponent implements OnInit {
 
   @Input() satellites: Satellite[];
+  
+
   constructor() { }
 
   ngOnInit() {
@@ -26,5 +28,14 @@ export class OrbitListComponent implements OnInit {
 			return 0;
 		});
 	}
+
+	isSpaceDebris(satellite: object): boolean {
+		if (satellite["type"] === 'Space Debris'){
+			return true;} 
+			else {
+			return false;
+			}
+   }
+	
 
 }
