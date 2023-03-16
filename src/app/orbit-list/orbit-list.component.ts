@@ -29,13 +29,5 @@ export class OrbitListComponent implements OnInit {
 		});
 	}
 
-	isSpaceDebris(satellite: object): boolean {
-		if (satellite["type"] === 'Space Debris'){
-			return true;} 
-			else {
-			return false;
-			}
-   }
-	
 
 }
